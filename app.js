@@ -199,7 +199,10 @@ document.addEventListener('DOMContentLoaded', () => {
       opacity: 0,
       x: 50,
       duration: 0.8,
-      ease: 'power3.out'
+      ease: 'power3.out',
+      onComplete: function() {
+        this.targets().forEach(el => el.classList.add('reveal-complete'));
+      }
     }, '-=0.8');
   }
 
@@ -428,6 +431,9 @@ document.addEventListener('DOMContentLoaded', () => {
       trigger: '.services-grid',
       start: 'top 90%',
       toggleActions: 'play none none none'
+    },
+    onComplete: function() {
+      this.targets().forEach(el => el.classList.add('reveal-complete'));
     }
   });
 
@@ -442,6 +448,9 @@ document.addEventListener('DOMContentLoaded', () => {
       trigger: '.doctors-grid',
       start: 'top 90%',
       toggleActions: 'play none none none'
+    },
+    onComplete: function() {
+      this.targets().forEach(el => el.classList.add('reveal-complete'));
     }
   });
 
@@ -456,6 +465,9 @@ document.addEventListener('DOMContentLoaded', () => {
       trigger: '.features-grid',
       start: 'top 90%',
       toggleActions: 'play none none none'
+    },
+    onComplete: function() {
+      this.targets().forEach(el => el.classList.add('reveal-complete'));
     }
   });
 

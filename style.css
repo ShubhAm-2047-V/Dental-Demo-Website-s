@@ -257,9 +257,13 @@ html.lenis {
   border: 1px solid var(--glass-border-light);
   border-radius: var(--border-radius-lg);
   box-shadow: var(--glass-shadow);
-  transition: var(--transition-premium);
+  transition: box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
   overflow: hidden;
+}
+
+.glass-card.reveal-complete {
+  transition: var(--transition-premium);
 }
 
 .glass-card::before {
