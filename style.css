@@ -657,6 +657,32 @@ NAVIGATION BAR
   background: rgba(255, 255, 255, 0.55);
 }
 
+@media (min-width: 993px) {
+  .hero .container.hero-grid {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: calc((100vw - 1280px) / 2 + 2.5rem) !important;
+    padding-right: 0 !important;
+  }
+
+  .hero-booking-card {
+    border-right: none !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    width: 100%;
+    max-width: 480px;
+    justify-self: end;
+    box-shadow: -15px 20px 45px rgba(9, 26, 54, 0.12) !important;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1280px) {
+  .hero .container.hero-grid {
+    padding-left: 2.5rem !important;
+    padding-right: 0 !important;
+  }
+}
+
 .hero-booking-card h3 {
   font-family: var(--font-serif);
   font-size: 1.65rem;

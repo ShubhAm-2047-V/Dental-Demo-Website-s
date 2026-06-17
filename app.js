@@ -197,9 +197,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }, '-=0.4')
     .from('.hero-booking-card', {
       opacity: 0,
-      x: 50,
-      duration: 0.8,
-      ease: 'power3.out',
+      x: 350,
+      duration: 1.4,
+      ease: 'power4.out',
       onComplete: function() {
         this.targets().forEach(el => el.classList.add('reveal-complete'));
       }
