@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>DentalLux Clinic | Luxury Dental Care & Smile Designing</title>
+  <meta name="description" content="Experience world-class dental care at DentalLux Clinic. Specializing in cosmetic smile designing, dental implants, teeth whitening, and painless treatments. Book your premium appointment today.">
+  <meta name="keywords" content="premium dental clinic, luxury dental care, dental implants, cosmetic dentist, smile designing, teeth whitening, painless dentistry, DentalLux">
+  <meta name="author" content="DentalLux Clinic">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DentalLux Clinic | Luxury Dental Care & Smile Designing">
+  <meta property="og:description" content="Experience world-class dental care at DentalLux Clinic. Specializing in cosmetic smile designing, dental implants, teeth whitening, and painless treatments.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="DentalLux Clinic | Luxury Dental Care & Smile Designing">
+  <meta property="twitter:description" content="Experience world-class dental care at DentalLux Clinic. Specializing in cosmetic smile designing, dental implants, teeth whitening, and painless treatments.">
+  <meta property="twitter:image" content="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80">
+
+  <!-- Schema.org JSON-LD (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "DentalLux Clinic",
+    "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80",
+    "logo": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80",
+    "url": "https://dentalluxclinic.com",
+    "telephone": "+919028833275",
+    "email": "appointments@dentalluxclinic.com",
+    "priceRange": "$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "101 Luxury Health Plaza, Jubilee Hills",
+      "addressLocality": "Hyderabad",
+      "addressRegion": "TS",
+      "postalCode": "500033",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 17.4301,
+      "longitude": 78.4079
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "20:00"
+      }
+    ],
+    "sameAs": [
+      "https://facebook.com/dentalluxclinic",
+      "https://instagram.com/dentalluxclinic",
+      "https://twitter.com/dentalluxclinic"
+    ]
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/0077b6/tooth.png">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Glow -->
+  <div class="cursor-glow" id="custom-cursor"></div>
+
+  <!-- Loader Animation -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-logo-icon">
+        <i class="fa-solid fa-tooth"></i>
+      </div>
+      <div class="loader-logo-text">DentalLux</div>
+      <div class="loader-spinner-wrapper">
+        <div class="loader-spinner" id="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Decorative Blobs -->
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div class="bg-blob blob-3"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="navbar" id="main-navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <i class="fa-solid fa-tooth"></i> DentalLux
+      </a>
+      <ul class="nav-links" id="nav-menu">
+        <li class="nav-item"><a href="#hero">Home</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#services">Services</a></li>
+        <li class="nav-item"><a href="#doctors">Doctors</a></li>
+        <li class="nav-item"><a href="#gallery">Before & After</a></li>
+        <li class="nav-item"><a href="#why-choose-us">Why Us</a></li>
+        <li class="nav-item"><a href="#faqs">FAQs</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#booking" class="btn btn-secondary"><i class="fa-solid fa-calendar-check"></i> Book Now</a>
+      </div>
+      <button class="mobile-toggle" id="menu-toggle" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-video-container">
+      <video class="hero-video" autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1920&q=80">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-dentist-examining-a-patients-teeth-42353-large.mp4" type="video/mp4">
+      </video>
+    </div>
+    
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-tag"><i class="fa-solid fa-award"></i> The Gold Standard in Healthcare</span>
+        <h1 class="hero-title text-gradient-gold">Creating Confident Smiles For Life</h1>
+        <p class="hero-desc">Experience next-generation painless dental care in a luxury, state-of-the-art environment. Elevate your oral health with global dental leaders.</p>
+        <div class="hero-actions">
+          <a href="#booking" class="btn btn-primary"><i class="fa-solid fa-calendar-day"></i> Book Appointment</a>
+          <a href="tel:+919028833275" class="btn btn-secondary"><i class="fa-solid fa-phone"></i> Call Now</a>
+        </div>
+      </div>
+
+      <!-- Glass Appointment Booking Card -->
+      <div class="hero-booking-card glass-card">
+        <h3>Instantly Book Visit</h3>
+        <p>Confirm your specialized consultation in minutes.</p>
+        <form class="booking-mini-form" id="hero-mini-booking">
+          <div class="form-group-mini">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" class="form-control-mini" placeholder="Your Name" required>
+          </div>
+          <div class="form-group-mini">
+            <i class="fa-solid fa-phone"></i>
+            <input type="tel" class="form-control-mini" placeholder="Phone Number" required>
+          </div>
+          <div class="form-group-mini">
+            <i class="fa-solid fa-stethoscope"></i>
+            <select class="form-control-mini" required>
+              <option value="" disabled selected>Select Treatment</option>
+              <option value="teeth-whitening">Teeth Whitening</option>
+              <option value="dental-implants">Dental Implants</option>
+              <option value="smile-designing">Smile Designing</option>
+              <option value="root-canal">Root Canal Treatment</option>
+              <option value="orthodontics">Braces & Aligners</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary w-full" style="width: 100%;"><i class="fa-solid fa-circle-check"></i> Request Callback</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. STATISTICS SECTION -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stats-card glass-card">
+          <div class="stats-number" data-target="5000">0</div>
+          <div class="stats-label">Happy Patients</div>
+        </div>
+        <div class="stats-card glass-card">
+          <div class="stats-number" data-target="15">0</div>
+          <div class="stats-label">Years Experience</div>
+        </div>
+        <div class="stats-card glass-card">
+          <div class="stats-number" data-target="4.9" data-decimals="1">0</div>
+          <div class="stats-label">Star Rating</div>
+        </div>
+        <div class="stats-card glass-card">
+          <div class="stats-number" data-target="20">0</div>
+          <div class="stats-label">Treatments</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. ABOUT CLINIC -->
+  <section class="about-section section-padding" id="about">
+    <div class="container about-grid">
+      <div class="about-images">
+        <div class="about-img-frame about-img-1">
+          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Professional Dentist smiling">
+        </div>
+        <div class="about-img-frame about-img-2">
+          <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=800&q=80" alt="DentalLux modern luxury interior clinic lobby">
+        </div>
+      </div>
+      
+      <div class="about-content">
+        <span class="serif-tag">Welcome to DentalLux</span>
+        <h2 class="section-title text-gradient-blue">Revolutionizing Modern Dentistry with Luxury Care</h2>
+        <p class="section-desc" style="margin-bottom: 1.5rem;">At DentalLux Clinic, we combine medical excellence with a premium client experience. Our world-renowned dental specialists use cutting-edge technology to perform precise, personalized treatments designed for your total comfort.</p>
+        
+        <div class="about-features">
+          <div class="about-feature-item">
+            <h4><i class="fa-solid fa-shield-halved"></i> Our Mission</h4>
+            <p>To deliver advanced, comfortable, and personalized dental services that enrich lives and inspire confidence.</p>
+          </div>
+          <div class="about-feature-item">
+            <h4><i class="fa-solid fa-eye"></i> Our Vision</h4>
+            <p>To remain the premier benchmark for luxury medical care and aesthetic smile transformations globally.</p>
+          </div>
+        </div>
+        
+        <div style="margin-top: 3rem;">
+          <a href="#booking" class="btn btn-primary"><i class="fa-solid fa-compass"></i> Discover More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SERVICES SECTION -->
+  <section class="services-section section-padding dark-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="serif-tag">Elite Services</span>
+        <h2 class="section-title text-gradient-gold">Exclusive Care for Outstanding Smiles</h2>
+        <p class="section-desc">Explore our curated clinical services covering aesthetic, restorative, and surgical dental treatments.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card glass-card">
+          <div class="service-icon-wrapper">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <h3>Teeth Whitening</h3>
+          <p>Remove tough stains and achieve a sparkling, pristine white shade with our safe laser whitening treatments.</p>
+          <a href="#booking" class="service-link">Book Now <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card glass-card">
+          <div class="service-icon-wrapper">
+            <i class="fa-solid fa-tooth"></i>
+          </div>
+          <h3>Dental Implants</h3>
+          <p>Permanently replace missing teeth with premium titanium implants that function and look exactly like real teeth.</p>
+          <a href="#booking" class="service-link">Book Now <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card glass-card">
+          <div class="service-icon-wrapper">
+            <i class="fa-solid fa-house-medical"></i>
+          </div>
+          <h3>Root Canal Treatment</h3>
+          <p>Save infected teeth from extraction using our painless, computerized micro-endodontic root canal treatments.</p>
+          <a href="#booking" class="service-link">Book Now <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card glass-card">
+          <div class="service-icon-wrapper">
+            <i class="fa-solid fa-face-smile"></i>
+          </div>
+          <h3>Smile Designing</h3>
+          <p>Craft your custom, perfect smile through advanced virtual previews, veneers, and composite bondings.</p>
+          <a href="#booking" class="service-link">Book Now <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card glass-card">
+          <div class="service-icon-wrapper">
+            <i class="fa-solid fa-align-center"></i>
+          </div>
+          <h3>Braces & Aligners</h3>
+          <p>Straighten misaligned teeth discreetly using state-of-the-art clear invisible aligners or self-ligating braces.</p>
+          <a href="#booking" class="service-link">Book Now <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card glass-card">
+          <div class="service-icon-wrapper">
+            <i class="fa-solid fa-child"></i>
+          </div>
+          <h3>Kids Dentistry</h3>
+          <p>Fun, stress-free, and friendly pediatric dental visits focused on building life-long healthy oral habits.</p>
+          <a href="#booking" class="service-link">Book Now <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="service-card glass-card">
+          <div class="service-icon-wrapper">
+            <i class="fa-solid fa-gem"></i>
+          </div>
+          <h3>Cosmetic Dentistry</h3>
+          <p>Elevate dental harmony and beauty with ceramic crowns, veneers, gum contouring, and composite fillings.</p>
+          <a href="#booking" class="service-link">Book Now <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="service-card glass-card">
+          <div class="service-icon-wrapper">
+            <i class="fa-solid fa-crown"></i>
+          </div>
+          <h3>Dental Crowns</h3>
+          <p>Reinforce weak or damaged teeth with customized, biological, and highly aesthetic zirconia crowns.</p>
+          <a href="#booking" class="service-link">Book Now <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. MEET OUR DOCTORS -->
+  <section class="doctors-section section-padding" id="doctors">
+    <div class="container">
+      <div class="section-header">
+        <span class="serif-tag">Elite Professionals</span>
+        <h2 class="section-title text-gradient-blue">Meet Our Medical Board Leaders</h2>
+        <p class="section-desc">A highly skilled clinical team dedicated to setting absolute standards in modern luxury dentistry.</p>
+      </div>
+
+      <div class="doctors-grid">
+        <!-- Doctor 1 -->
+        <div class="doctor-card">
+          <div class="doctor-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Dr. Alexander Lux">
+          </div>
+          <div class="doctor-info-glass">
+            <span class="doctor-tag">Founder & Chief Surgeon</span>
+            <h3 class="doctor-name">Dr. Alexander Lux</h3>
+            <p class="doctor-meta">Implantologist & Aesthetic Lead | 15+ Yrs Exp</p>
+            <div class="doctor-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 2 -->
+        <div class="doctor-card">
+          <div class="doctor-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1594824813573-246434de83fb?auto=format&fit=crop&w=600&q=80" alt="Dr. Sophia Chen">
+          </div>
+          <div class="doctor-info-glass">
+            <span class="doctor-tag">Smile Designer</span>
+            <h3 class="doctor-name">Dr. Sophia Chen</h3>
+            <p class="doctor-meta">Cosmetic & Aesthetic Dentistry | 10+ Yrs Exp</p>
+            <div class="doctor-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 3 -->
+        <div class="doctor-card">
+          <div class="doctor-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=600&q=80" alt="Dr. Marcus Vance">
+          </div>
+          <div class="doctor-info-glass">
+            <span class="doctor-tag">Senior Orthodontist</span>
+            <h3 class="doctor-name">Dr. Marcus Vance</h3>
+            <p class="doctor-meta">Braces & Clear Aligners Specialist | 12+ Yrs Exp</p>
+            <div class="doctor-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. BEFORE & AFTER GALLERY -->
+  <section class="gallery-section section-padding" style="background: var(--bg-gradient-light);" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="serif-tag">Smile Makeovers</span>
+        <h2 class="section-title text-gradient-blue">Real Results, Radiant Transformations</h2>
+        <p class="section-desc">Drag the interactive slider to view the incredible difference of our professional teeth whitening and smile design treatments.</p>
+      </div>
+
+      <div class="gallery-container">
+        <div class="slider-wrapper" id="before-after-slider">
+          <div class="slider-image img-before">
+            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=900&q=80" alt="Yellowed Teeth Smile Before Treatment">
+            <div class="slider-label label-before">Before Laser Whitening</div>
+          </div>
+          <div class="slider-image img-after" id="after-image-container">
+            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=900&q=80" alt="Bright Sparkling White Teeth Smile After Treatment">
+            <div class="slider-label label-after">After Professional Treatment</div>
+          </div>
+          <div class="slider-bar-handle" id="slider-handle">
+            <div class="slider-button"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. PATIENT TESTIMONIALS -->
+  <section class="testimonials-section section-padding" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="serif-tag">Testimonials</span>
+        <h2 class="section-title text-gradient-blue">Loved by Thousands of Patients</h2>
+        <p class="section-desc">See what our patients say about their luxury clinical experience and life-changing results.</p>
+      </div>
+
+      <div class="testimonials-container">
+        <div class="testimonials-slider-wrapper" style="overflow: hidden;">
+          <div class="testimonials-slider" id="testimonial-slider-container">
+            <!-- Review 1 -->
+            <div class="testimonial-card glass-card">
+              <span class="google-review-badge">
+                <i class="fa-brands fa-google"></i> Google Verified Review
+              </span>
+              <div class="rating-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-text">"DentalLux Clinic completely transformed my view of dentists. The space looks like a boutique hotel, and Dr. Lux made the implant procedure 100% painless. Simply amazing!"</p>
+              <div class="patient-profile">
+                <div class="patient-avatar">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Sarah Jenkins">
+                </div>
+                <div class="patient-info">
+                  <h4>Sarah Jenkins</h4>
+                  <p>Fashion Director, Hyd</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="testimonial-card glass-card">
+              <span class="google-review-badge">
+                <i class="fa-brands fa-google"></i> Google Verified Review
+              </span>
+              <div class="rating-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-text">"I opted for the 3D Cosmetic Smile Designing. They simulated my future smile beforehand and executed it flawlessly with porcelain veneers. The confidence boost is unmatched."</p>
+              <div class="patient-profile">
+                <div class="patient-avatar">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="David Miller">
+                </div>
+                <div class="patient-info">
+                  <h4>David Miller</h4>
+                  <p>Tech Entrepreneur, Blr</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="testimonial-card glass-card">
+              <span class="google-review-badge">
+                <i class="fa-brands fa-google"></i> Google Verified Review
+              </span>
+              <div class="rating-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-text">"The kids' clinical setup is outstanding. My 6-year-old daughter was actually excited for her treatment! Pediatric doctors are highly patient and welcoming."</p>
+              <div class="patient-profile">
+                <div class="patient-avatar">
+                  <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Elena Rostova">
+                </div>
+                <div class="patient-info">
+                  <h4>Elena Rostova</h4>
+                  <p>Pediatric Educator</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-controls">
+          <button class="control-btn" id="prev-review" aria-label="Previous Review"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="control-btn" id="next-review" aria-label="Next Review"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. WHY CHOOSE US -->
+  <section class="why-us-section section-padding dark-section" id="why-choose-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="serif-tag">Our Strengths</span>
+        <h2 class="section-title text-gradient-gold">Why Discerning Patients Choose Us</h2>
+        <p class="section-desc">Experience healthcare refined to absolute perfection with our high-end dentistry model.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card glass-card">
+          <div class="feature-icon"><i class="fa-solid fa-microscope"></i></div>
+          <h3>Modern Tech</h3>
+          <p>We use state-of-the-art 3D scanners, intraoral cameras, and precise computer-guided surgical systems.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card glass-card">
+          <div class="feature-icon"><i class="fa-solid fa-kit-medical"></i></div>
+          <h3>Painless Care</h3>
+          <p>Advanced computerized anesthesia delivery methods and comfortable relaxation treatments.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card glass-card">
+          <div class="feature-icon"><i class="fa-solid fa-user-doctor"></i></div>
+          <h3>Expert Doctors</h3>
+          <p>Our lead specialists are board-certified clinicians with worldwide exposure and training.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card glass-card">
+          <div class="feature-icon"><i class="fa-solid fa-pump-medical"></i></div>
+          <h3>Sterilization</h3>
+          <p>Strict multi-step chemical autoclave procedures adhering to international medical standards.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card glass-card">
+          <div class="feature-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <h3>Personalized</h3>
+          <p>Bespoke consultations, custom smile simulations, and luxury treatment suites.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. APPOINTMENT BOOKING SECTION -->
+  <section class="booking-section section-padding" id="booking">
+    <div class="container booking-grid">
+      <div class="booking-info">
+        <span class="serif-tag">Appointments</span>
+        <h2 class="text-gradient-blue">Ready to Elevate Your Smile?</h2>
+        <p>Book your detailed physical consultation with our lead clinicians today. Take the first step to your customized transformation.</p>
+        <div class="booking-points">
+          <div class="booking-point-item">
+            <div class="booking-point-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="booking-point-text">
+              <h4>Flexible Schedules</h4>
+              <p>Appointments from 9:00 AM to 8:00 PM, Monday to Saturday.</p>
+            </div>
+          </div>
+          <div class="booking-point-item">
+            <div class="booking-point-icon"><i class="fa-solid fa-hospital-user"></i></div>
+            <div class="booking-point-text">
+              <h4>First-Class Comfort</h4>
+              <p>Luxury patient lounge with refreshments and entertainment systems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Booking Form -->
+      <div class="booking-form-wrapper glass-card" style="position: relative;">
+        <!-- Success Screen -->
+        <div class="form-success-overlay" id="form-success-screen">
+          <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+          <h3 class="text-gradient" style="font-size: 2rem;">Booking Successful!</h3>
+          <p style="margin-top: 1rem; color: var(--text-muted);">Thank you for choosing DentalLux. Our customer support concierge will call you within 15 minutes to confirm your scheduled slot.</p>
+          <button class="btn btn-primary" style="margin-top: 2rem;" id="reset-booking-btn">Done</button>
+        </div>
+
+        <h3>Schedule Appointment</h3>
+        <p>Fill out the form below. We will reach back immediately.</p>
+        <form class="booking-form" id="main-appointment-form">
+          <div class="form-group">
+            <label class="form-label" for="full-name">Full Name</label>
+            <input type="text" id="full-name" class="form-control" placeholder="John Doe" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="phone-number">Phone Number</label>
+              <input type="tel" id="phone-number" class="form-control" placeholder="+91 98765 43210" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email-address">Email Address</label>
+              <input type="email" id="email-address" class="form-control" placeholder="john@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="treatment-select">Treatment Required</label>
+            <select id="treatment-select" class="form-control" required>
+              <option value="" disabled selected>Select service</option>
+              <option value="teeth-whitening">Teeth Whitening</option>
+              <option value="dental-implants">Dental Implants</option>
+              <option value="smile-designing">Smile Designing (Cosmetic)</option>
+              <option value="root-canal">Root Canal Treatment</option>
+              <option value="aligners">Braces & Aligners</option>
+              <option value="kids-dentistry">Kids Dentistry</option>
+              <option value="crowns">Dental Crowns</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="patient-message">Additional Notes (Optional)</label>
+            <textarea id="patient-message" class="form-control" rows="3" placeholder="Tell us about your requirements or preferred time..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;"><i class="fa-solid fa-paper-plane"></i> Book Appointment Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. FAQ SECTION -->
+  <section class="faq-section section-padding" id="faqs">
+    <div class="container">
+      <div class="section-header">
+        <span class="serif-tag">FAQs</span>
+        <h2 class="section-title text-gradient-blue">Common Oral Health Queries</h2>
+        <p class="section-desc">Find answers to the most common dental procedure questions asked by our patients.</p>
+      </div>
+
+      <div class="faq-container">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-question">How often should I visit the dentist?</h3>
+            <div class="faq-icon-wrapper"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">
+              We recommend scheduling a routine check-up and professional dental scaling every 6 months to maintain optimal gum health, identify minor cavities early, and preserve enamel surfaces.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-question">Are dental implants permanent?</h3>
+            <div class="faq-icon-wrapper"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">
+              Yes, dental implants are considered the most permanent solution for missing teeth. The titanium post fuses with your jawbone through osseointegration, acting as a lifetime root for custom-crafted crowns.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-question">What is cosmetic smile designing?</h3>
+            <div class="faq-icon-wrapper"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">
+              Smile designing is a tailored cosmetic process where our specialists analyze your facial proportions, lip lines, and tooth geometry to construct a fully customized aesthetic makeover plan using veneers, composites, and whitening.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-question">Is teeth whitening safe for enamel?</h3>
+            <div class="faq-icon-wrapper"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">
+              Absolutely. Our laser teeth whitening treatments are fully supervised by aesthetic clinicians and utilize advanced neutral pH hydrogen gels which break down organic stain molecules without damaging the hard enamel structure.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-question">Do you offer emergency dental services?</h3>
+            <div class="faq-icon-wrapper"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">
+              Yes, DentalLux offers immediate care for dental emergencies including severe toothaches, chipped crowns, swelling, and facial trauma. Please call our hotline directly to schedule an urgent slot.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. CONTACT SECTION -->
+  <section class="contact-section section-padding" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info-card glass-card">
+        <div>
+          <span class="serif-tag">Location & Contact</span>
+          <h2 class="text-gradient-blue" style="font-size: 2.25rem; margin-bottom: 2.5rem;">Reach Out to Us</h2>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-text">
+                <h4>Address</h4>
+                <p>101 Luxury Health Plaza, Jubilee Hills,<br>Hyderabad, TS, India - 500033</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone-volume"></i></div>
+              <div class="contact-text">
+                <h4>Phone Number</h4>
+                <p><a href="tel:+919028833275">+91 90288 33275</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-text">
+                <h4>Email Address</h4>
+                <p><a href="mailto:appointments@dentalluxclinic.com">appointments@dentallux.com</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+              <div class="contact-text">
+                <h4>Working Hours</h4>
+                <p>Mon - Sat: 9:00 AM - 8:00 PM<br>Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Maps Embed -->
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.0392330752187!2d78.40571131487723!3d17.4301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9158f2010c2f%3A0x8677b1029c78d52a!2sJubilee%20Hills%2C%20Hyderabad%2C%20Telangana%20500033!5e0!3m2!1sen!2sin!4v1623910392312!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" title="DentalLux Location Map"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col" style="grid-column: 1 / span 1;">
+          <a href="#hero" class="logo footer-logo">
+            <i class="fa-solid fa-tooth text-gradient"></i> DentalLux
+          </a>
+          <p class="footer-desc">Redefining modern medical services with a personalized luxury framework. Your smiles deserve the best aesthetics.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Clinic</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#doctors">Meet Doctors</a></li>
+            <li><a href="#gallery">Before & After</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support & Info</h4>
+          <ul class="footer-links">
+            <li><a href="#faqs">FAQs</a></li>
+            <li><a href="#contact">Contact Details</a></li>
+            <li><a href="#booking">Book Appointment</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p class="footer-desc">Subscribe to receive luxury oral health tips and exclusive updates from our board.</p>
+          <form class="newsletter-form" id="newsletter-subscription-form">
+            <input type="email" class="form-control" placeholder="Email Address" required aria-label="Newsletter Email">
+            <button type="submit" class="btn btn-primary" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 DentalLux Clinic. All rights reserved.</p>
+        <p>Designed with medical excellence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WIDGETS -->
+  <div class="floating-actions">
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919028833275?text=Hello%20I%20would%20like%20to%20book%20a%20dental%20appointment" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    
+    <!-- Back to top button -->
+    <button class="back-to-top" id="scroll-to-top" aria-label="Back to Top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <!-- JS Scripts (Libraries CDNs + App Logic) -->
+  <!-- Lenis Smooth Scroll Library -->
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  
+  <!-- GSAP Core and ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Main Website Script -->
+  <script src="app.js"></script>
+</body>
+</html>
