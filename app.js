@@ -166,75 +166,44 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  // 6. HERO ENTRY ANIMATIONS  +  BOOKING CARD CINEMATIC INTRO
+  // 6. HERO ENTRY ANIMATIONS
   function triggerHeroAnimations() {
-    const card = document.querySelector('.hero-booking-card');
-    const backdrop = document.getElementById('booking-backdrop');
+    const tl = gsap.timeline();
 
-    if (!card) return;
-
-    // --- Phase 1: Freeze card at viewport center ---
-    // Get the card's natural (grid) bounding rect BEFORE we move it
-    const naturalRect = card.getBoundingClientRect();
-
-    // Compute delta from natural position → viewport center
-    const vpCx = window.innerWidth  / 2;
-    const vpCy = window.innerHeight / 2;
-    const cardCx = naturalRect.left + naturalRect.width  / 2;
-    const cardCy = naturalRect.top  + naturalRect.height / 2;
-    const startX = vpCx - cardCx;   // how much to shift RIGHT from natural pos
-    const startY = vpCy - cardCy;   // how much to shift DOWN from natural pos
-
-    // Set card instantly at center (no animation yet), scale up slightly
-    gsap.set(card, {
-      x: startX,
-      y: startY,
-      scale: 1.04,
-      zIndex: 9999,
-      boxShadow: '0 40px 100px rgba(9,26,54,0.30), 0 0 0 1.5px rgba(212,175,55,0.25)',
-      opacity: 0
-    });
-
-    // Fade in backdrop + card together
-    backdrop.classList.add('active');
-    gsap.to(card, { opacity: 1, duration: 0.55, ease: 'power2.out' });
-
-    // --- Phase 2: After 2s, fly card to its natural grid position ---
-    gsap.delayedCall(2, () => {
-      // Fade out backdrop
-      backdrop.classList.remove('active');
-
-      // Fly card back home (x:0, y:0 = natural position), scale to 1
-      gsap.to(card, {
-        x: 0,
-        y: 0,
-        scale: 1,
-        zIndex: 2,
-        boxShadow: '0 20px 50px rgba(9,26,54,0.10)',
-        duration: 1.1,
-        ease: 'power4.inOut',
-        onComplete: () => {
-          // Clear GSAP inline styles so CSS takes full control
-          gsap.set(card, { clearProps: 'all' });
-          card.classList.add('reveal-complete');
-        }
-      });
-    });
-
-    // --- Hero content elements fade in (text + buttons) ---
-    const tl = gsap.timeline({ delay: 0.1 });
     tl.from('.hero-tag', {
-      opacity: 0, y: 20, duration: 0.6, ease: 'power3.out'
+      opacity: 0,
+      y: 20,
+      duration: 0.6,
+      ease: 'power3.out'
     })
     .from('.hero-title', {
-      opacity: 0, y: 30, duration: 0.8, ease: 'power3.out'
+      opacity: 0,
+      y: 30,
+      duration: 0.8,
+      ease: 'power3.out'
     }, '-=0.4')
     .from('.hero-desc', {
-      opacity: 0, y: 20, duration: 0.6, ease: 'power3.out'
+      opacity: 0,
+      y: 20,
+      duration: 0.6,
+      ease: 'power3.out'
     }, '-=0.5')
     .from('.hero-actions .btn', {
-      opacity: 0, y: 15, stagger: 0.15, duration: 0.5, ease: 'power3.out'
-    }, '-=0.4');
+      opacity: 0,
+      y: 15,
+      stagger: 0.15,
+      duration: 0.5,
+      ease: 'power3.out'
+    }, '-=0.4')
+    .from('.hero-booking-card', {
+      opacity: 0,
+      x: 50,
+      duration: 0.8,
+      ease: 'power3.out',
+      onComplete: function() {
+        this.targets().forEach(el => el.classList.add('reveal-complete'));
+      }
+    }, '-=0.8');
   }
 
 

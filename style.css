@@ -599,7 +599,7 @@ NAVIGATION BAR
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 0.75fr 1.25fr;
+  grid-template-columns: 1.25fr 0.75fr;
   gap: 5rem;
   align-items: center;
   position: relative;
