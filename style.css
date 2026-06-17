@@ -599,7 +599,7 @@ NAVIGATION BAR
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.25fr 0.75fr;
+  grid-template-columns: 0.75fr 1.25fr;
   gap: 5rem;
   align-items: center;
   position: relative;
@@ -650,39 +650,11 @@ NAVIGATION BAR
   gap: 1.5rem;
 }
 
-/* Glass Booking Card — starts centered on hero load, docks to right after 2s */
+/* Glass Booking Card */
 .hero-booking-card {
   padding: 3rem 2.5rem;
   border: 1px solid rgba(212, 175, 55, 0.25);
-  background: rgba(255, 255, 255, 0.72);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  /* GSAP will animate this from fixed center to its natural position */
-  will-change: transform, opacity;
-}
-
-/* Fullscreen soft backdrop — fades out after card docks */
-#booking-backdrop {
-  position: fixed;
-  inset: 0;
-  background: rgba(3, 10, 22, 0.42);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  z-index: 8888;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.5s ease;
-}
-#booking-backdrop.active {
-  opacity: 1;
-  pointer-events: all;
-}
-
-/* Floating pill wrapper used during the intro flight */
-#booking-card-portal {
-  position: fixed;
-  z-index: 9999;
-  pointer-events: all;
+  background: rgba(255, 255, 255, 0.55);
 }
 
 .hero-booking-card h3 {
