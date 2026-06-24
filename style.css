@@ -1793,6 +1793,16 @@ select.form-control {
   color: var(--text-muted-light);
 }
 
+.footer-bottom a {
+  color: var(--text-muted-light);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.footer-bottom a:hover {
+  color: var(--gold-primary);
+}
+
 /* =====================================================
 FLOATING WIDGETS
 ===================================================== */
